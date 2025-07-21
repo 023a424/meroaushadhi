@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mero Aausadhi
 
-## Getting Started
+## Overview
+Mero Aausadhi is an innovative medicine analysis application that helps users identify and learn about medications through image recognition technology. Simply take a picture of any medicine, and get instant access to detailed information about its composition, uses, and precautions.
 
-First, run the development server:
+## Key Features
+- Medicine identification through image recognition
+- Detailed medication information including:
+  - Active ingredients
+  - Usage instructions
+  - Side effects
+  - Contraindications
+  - Generic alternatives
+- Offline medicine database
+- Multi-language support (English & Nepali)
+- Medicine reminder system
+- Emergency medicine information
+- Pharmacy locator
 
+## Technical Stack
+- Frontend: React (NEXT JS)
+- Backend: Node.js & Express
+- Image Recognition: TensorFlow
+- OCR: Tesseract.js
+
+## Installation
+
+### Prerequisites
+- Node.js (v14 or higher)
+- React Native development environment
+- Android Studio / Xcode
+
+### Setup Steps
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/mero-aausadhi.git
+cd mero-aausadhi
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+cd ios && pod install && cd .. # For iOS development
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Configure environment
+```bash
+cp .env.example .env
+```
+Edit `.env` with your API keys and database configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
+1. Development
+```bash
+npm run start # Start Metro bundler
+npm run android # Run on Android
+npm run ios # Run on iOS
+```
 
-## Learn More
+2. Build
+```bash
+npm run build:android # For Android APK
+npm run build:ios # For iOS IPA
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
+```
+mero-aausadhi/
+├── src/
+│   ├── components/
+│   ├── screens/
+│   ├── services/
+│   │   ├── imageRecognition/
+│   │   └── database/
+│   ├── models/
+│   └── utils/
+├── assets/
+│   ├── ml-models/
+│   └── images/
+├── docs/
+└── tests/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Documentation
+Detailed API documentation is available in the `/docs` directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Privacy & Security
+- All image processing is done locally on the device
+- No personal medical data is stored on remote servers
+- Compliant with healthcare data protection standards
 
-## Deploy on Vercel
+## Contributing
+We welcome contributions! Please see our contributing guidelines in CONTRIBUTING.md.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Support
+For support:
+- Open an issue on GitHub
+- Email: support@meroaausadhi.com
+- Visit: https://meroaausadhi.com/support
+
+## Acknowledgments
+- Medicine database provided by Nepal Medical Council
+- Image recognition model trained in collaboration with leading pharmacologists
