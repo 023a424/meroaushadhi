@@ -98,8 +98,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Support
 For support:
 - Open an issue on GitHub
-- Email: support@meroaausadhi.com
-- Visit: https://meroaausadhi.com/support
+- Email: subodhpandey657@gmail.com
 
 ## Acknowledgments
 - Medicine database provided by Nepal Medical Council
